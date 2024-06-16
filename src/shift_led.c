@@ -61,11 +61,10 @@ int main() {
 
 	// Run the loop
 	while(1) {
-		sleep(BLINK_DELAY_SEC/2);
+		usleep(BLINK_DELAY);
 		gpiod_line_set_value(clk_line, 0);
 
-		//usleep(1);
-		sleep(BLINK_DELAY_SEC/2);
+		usleep(BLINK_DELAY);
 		gpiod_line_set_value(clk_line, 1);
 	
 		for (int i = 0; i < 14; i++) {
