@@ -1,7 +1,7 @@
 #include <gpiod.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "../inc/blin_led.h"
+#include "../inc/blink_led.h"
 
 int main() {
     struct gpiod_chip *chip;
