@@ -7,7 +7,7 @@ int main() {
     struct gpiod_chip *chip;
     struct gpiod_line *lines[14];
 	struct gpiod_line *clk_line;
-    int i, ret;
+    int incr, ret;
 
 	// Open the chip 
     chip = gpiod_chip_open_by_name(GPIO_CHIP);
