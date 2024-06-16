@@ -3,7 +3,7 @@
 
 #include <gpiod.h>
 
-#define BLINK_DELAY 500
+#define BLINK_DELAY 500000
 #define GPIO_CHIP "gpiochip0"
 
 #endif
